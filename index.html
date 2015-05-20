@@ -9,8 +9,14 @@
 	</head>
 
 	<body>
+		<div id="container">
 		<header>
 			<div class="centralise clearfix">
+				<div id="hamburger">
+					<div class="bars"></div>
+					<div class="bars"></div>
+					<div class="bars"></div>
+				</div>
 				<img src="https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/unhcr-exchange-logo-white.png" id="mainLogo" class="floats">
 				<nav class="floats clearfix">
 					<ul>
@@ -18,13 +24,7 @@
 						<li><a href="#"></a>About</li>
 						<li><a href="#"></a>Learn</li>
 					</ul>
-					<h4>Login</h4>
-					<div id="hamburger">
-						<div class="bars"></div>
-						<div class="bars"></div>
-						<div class="bars"></div>
-					</div>
-				</nav>
+				</nav role="navigation">
 				<div class="b-login-form floats">
 				%{login_form}
 				%{page_content}	
@@ -71,6 +71,7 @@
 			</main>
 			<footer></footer>
 		</div>
+		</div><!-- // Container close // -->
 
 		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
