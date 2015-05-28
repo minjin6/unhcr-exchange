@@ -1,0 +1,646 @@
+.clearfix:before, .clearfix:after {
+  content:"";
+  display:table;
+}
+
+.clearfix:after{
+  clear:both;
+}
+
+.floats {
+    float: left;
+}
+
+.floats-right {
+	float: right;
+}
+
+body { 
+	font-size: 1.05em;
+	line-height: 1.25em;
+	font-family: helvetica, arial, sans-serif;
+	background: #ccc;
+	color: #fff;
+}
+
+.centralise {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+
+}
+
+a:hover {
+
+	color: #E2BA61;
+
+}
+
+img {
+	width: 100%;
+}
+
+header {
+    background-color: #045288;
+    height: 92px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 33px solid #3181BA;
+
+}
+
+#mainLogo {
+    display: inline-block;
+    width: 172px;
+    height: 52px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.b-login-form {
+    display: inline-block;
+    width: 40%;
+    height: 92px;
+    margin-left: 12%;
+}
+
+.floats {
+    float: left;
+}
+
+#menu-icon {
+    display: none;
+    margin-top: 10px;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    clear: both;
+}
+
+.bars {
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+nav {
+
+	float: right;
+	padding: 20px;	
+
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	float: left;
+	padding: 10px
+}
+
+
+/*----------------------------// Defualts //------------------------------------*/
+
+.button {
+    border-radius: 5px;
+    background: #E2BA61;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: #045288;
+    border: none;
+    padding: 8px 10px 5px;
+    font-weight: bold;
+}
+
+.l-top {
+    height: 115px;
+    background: #fff;
+}
+
+.l-top .h-top {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+.l-top h1.logo {
+    background: url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/amex/GBT_logo.png) no-repeat left center;
+    text-indent: -99999px;
+    width: 275px;
+    height: 50px;
+}
+.l-top .input {
+    display: inline;
+}
+.l-top .b-logo {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 460px;
+}
+.l-top .b-login-form {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 460px;
+}
+
+.b-simple-form {
+    margin-top: 0.6em;
+    margin-bottom: 0.17em;
+    margin: 20px 0;
+    width: 500px;
+}
+.b-simple-form .columns {
+    zoom: 1;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    /* Hides from IE5/Mac \*/
+    /* End hide from IE5/Mac */
+    margin-bottom: 1em;
+}
+.b-simple-form .columns:before, .b-simple-form .columns:after {
+    content: "";
+    display: table;
+}
+.b-simple-form .columns:after {
+    clear: both;
+}
+.b-simple-form .columns {
+    *display: inline;
+}
+* html .b-simple-form .columns {
+    height: 1px;
+}
+.b-simple-form .columns {
+    display: block;
+}
+.b-simple-form .col1 {
+    float: left;
+    width: 360px;
+}
+.b-simple-form .col2 {
+    float: right;
+    width: 360px;
+}
+.b-simple-form fieldset {
+    border: 1px solid #d5d5d5;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 20px 15px;
+    margin-bottom: 20px;
+}
+.b-simple-form legend {
+    color: #888;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+.b-simple-form textarea {
+    line-height: 18px;
+}
+.b-simple-form .input {
+    margin-bottom: 15px;
+}
+.b-simple-form .actions {
+    text-align: right;
+}
+.b-simple-form .boolean input, .b-simple-form .boolean label {
+    vertical-align: middle;
+}
+.b-simple-form .boolean input {
+    margin-left: 1px;
+}
+.b-simple-form .boolean label {
+    padding-top: 1px;
+}
+.b-simple-form div.file,
+.b-simple-form div.password,
+.b-simple-form div.string,
+.b-simple-form div.email,
+.b-simple-form div.text,
+.b-simple-form div.boolean {
+    margin: 5px 0;
+}
+.b-simple-form .file:disabled,
+.b-simple-form .password:disabled,
+.b-simple-form .string:disabled,
+.b-simple-form .email:disabled,
+.b-simple-form .text:disabled {
+    color: #ccc;
+}
+.b-simple-form .file label,
+.b-simple-form .password label,
+.b-simple-form .string label,
+.b-simple-form .email label,
+.b-simple-form .text label {
+    display: block;
+    margin-bottom: 0.4em;
+}
+.b-simple-form .radio label.radio {
+    display: block;
+    margin-bottom: 0.4em;
+}
+.b-simple-form .radio span label {
+    margin-right: 1em;
+    padding-left: 0.2em;
+}
+.b-simple-form .password input,
+.b-simple-form .password textarea,
+.b-simple-form .string input,
+.b-simple-form .string textarea,
+.b-simple-form .email input,
+.b-simple-form .email textarea,
+.b-simple-form .text input,
+.b-simple-form .text textarea {
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
+    background: -webkit-linear-gradient(top, #f2f2f2, #ffffff);
+    background: -moz-linear-gradient(top, #f2f2f2, #ffffff);
+    background: -o-linear-gradient(top, #f2f2f2, #ffffff);
+    background: -ms-linear-gradient(top, #f2f2f2, #ffffff);
+    background: linear-gradient(top, #f2f2f2, #ffffff);
+    border: 1px solid #cfcfcf;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 3px;
+    -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 3px;
+    font-size: 14px;
+    outline: none;
+    padding: 10px;
+    width: 296px;
+}
+.b-simple-form .password input:focus,
+.b-simple-form .password textarea:focus,
+.b-simple-form .string input:focus,
+.b-simple-form .string textarea:focus,
+.b-simple-form .email input:focus,
+.b-simple-form .email textarea:focus,
+.b-simple-form .text input:focus,
+.b-simple-form .text textarea:focus {
+    background: #fbfee9;
+}
+.b-simple-form .password textarea,
+.b-simple-form .string textarea,
+.b-simple-form .email textarea,
+.b-simple-form .text textarea {
+    height: 8em;
+}
+.b-simple-form label {
+    cursor: pointer;
+}
+.b-simple-form .login-input input, .b-simple-form .email-address-input input {
+    width: 160px;
+    padding: 7px;
+}
+.b-simple-form div.login-input {
+    width: 180px;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    margin-right: 7px;
+}
+.b-simple-form div.login-input {
+    *display: inline;
+}
+.b-simple-form .login-input, .b-simple-form .button {
+    vertical-align: middle;
+}
+.b-simple-form .button {
+    cursor: pointer;
+}
+.b-simple-form .email-address-input {
+    zoom: 1;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    /* Hides from IE5/Mac \*/
+    /* End hide from IE5/Mac */
+}
+.b-simple-form .email-address-input:before, .b-simple-form .email-address-input:after {
+    content: "";
+    display: table;
+}
+.b-simple-form .email-address-input:after {
+    clear: both;
+}
+.b-simple-form .email-address-input {
+    *display: inline;
+}
+* html .b-simple-form .email-address-input {
+    height: 1px;
+}
+.b-simple-form .email-address-input {
+    display: block;
+}
+.b-simple-form .email-address-input label, .b-simple-form .email-address-input input {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    margin-right: 15px;
+}
+.b-simple-form .email-address-input label, .b-simple-form .email-address-input input {
+    *display: inline;
+}
+.b-simple-form .email-address-input label {
+    padding-top: 5px;
+}
+.b-simple-form .reset-password-button {
+    zoom: 1;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    /* Hides from IE5/Mac \*/
+    /* End hide from IE5/Mac */
+}
+.b-simple-form .reset-password-button:before, .b-simple-form .reset-password-button:after {
+    content: "";
+    display: table;
+}
+.b-simple-form .reset-password-button:after {
+    clear: both;
+}
+.b-simple-form .reset-password-button {
+    *display: inline;
+}
+* html .b-simple-form .reset-password-button {
+    height: 1px;
+}
+.b-simple-form .reset-password-button {
+    display: block;
+}
+.b-simple-form .reset-password-button input {
+    float: left;
+    margin-left: 93px;
+    margin-top: 10px;
+}
+
+.login-form .input-with-label {
+    width: 190px;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+}
+.login-form .input-with-label {
+    *display: inline;
+}
+.login-form .input-with-label input, .login-form .input-with-label label {
+    vertical-align: middle;
+}
+.login-form .input-with-label label {
+    padding-top: 1px;
+}
+
+.input-with-label input {
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+@inclide inline-block;
+    vertical-align: middle;
+}
+
+.login-form a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.company-logo {
+    position: relative;
+    top: 15px;
+}
+
+.l-center {
+    width: 100%;
+    height: 540px;
+    background: url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/amex/group-travelers.jpg) no-repeat center;
+    color: #fff;
+}
+.l-center .h-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    border-top: 15px solid #002663;
+}
+.l-center .sample-image {
+    position: absolute;
+    top: -140px;
+    height: 306px;
+    background: url(/assets/sign-up/sample.png) no-repeat left center;
+    width: 433px;
+    height: 306px;
+}
+.l-center .b-description {
+    position: relative;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 460px;
+}
+.l-center .b-description h4 {
+    margin: 125px 10px 0;
+}
+
+.b-lists .h-list {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 220px;
+}
+.b-lists .h-list:first-child {
+    margin-left: 0;
+}
+.b-lists .h-list:last-child {
+    margin-right: 0;
+}
+.b-lists ul {
+    margin: 5px 10px;
+    padding: 0 25px;
+    list-style-image: url(/assets/sign-up/arrows.png);
+}
+.b-lists ul li {
+    margin: 10px 0;
+}
+
+.b-page-content {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 460px;
+}
+
+.l-bottom {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    color: #222;
+}
+.l-bottom .h-bottom {
+    display: inline;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 940px;
+}
+.l-bottom h5 {
+    margin: 10px 0;
+}
+.l-bottom h5 a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #222;
+}
+
+.b-page-content .input.string {
+    margin: 10px 0;
+}
+.b-page-content .input.string input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B4B4B4;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 7px;
+    width: 260px;
+    -moz-box-shadow: inset 0 0 5px #ccc;
+    -webkit-box-shadow: inset 0 0 5px #ccc;
+    box-shadow: inset 0 0 5px #ccc;
+}
+.b-page-content .input.string label {
+    display: inline-block;
+    line-height: 1.2em;
+    vertical-align: middle;
+    width: 90px;
+}
+.b-page-content span.error {
+    display: block;
+    font-size: 10px;
+    padding-left: 90px;
+    color: #ff1820;
+}
+.b-page-content div.field_with_errors .input.string input {
+    border: 1px solid #FF1820 !important;
+}
+.b-page-content div.field_with_errors .input.string {
+    margin-top: 5px;
+}
+.b-page-content .actions {
+    text-align: left;
+}
+.b-page-content .actions input#user_submit {
+    margin-left: 90px;
+    margin-top: 5px;
+}
+
+label.password[for="user_password"] {
+  text-decoration: underline;
+}
+
+.b-password-requirements {
+  background: #333333;
+  padding: 5px;
+}
+
+
+/*----------------------------------------// MEDIA QUERY //---------------------------------------------*/
+
+@media only screen and (max-width : 1024px) {
+
+	header {
+
+		position: absolute;
+
+	}
+
+	#menu-icon {
+		display:inline-block;
+
+	}
+
+	a{
+		color: black;
+	}
+
+	nav ul, nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #DAE0E4;
+		border: 1px solid #555;
+		right: 20px;
+		top: 60px;
+		width: 20%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+	nav li {
+		color: black;
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+	}
+}
+
+@media only screen and (max-width : 960px) {
+	
+	.b-login-form {
+	    width: 30%;
+	    height: 92px;
+	    margin-left: 5%;
+	}
+
+	.b-simple-form div.login-input {
+  		width: 150px;
+  	}
+
+  	.b-simple-form .login-input input, .b-simple-form .email-address-input input {
+  		width: 140px;
+  	}
+
+}
