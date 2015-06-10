@@ -1,0 +1,9 @@
+#google_translate_element {
+	display: inline-block;
+	margin-right: 100px;
+	margin-left: -80px;
+}
+
+.modal-body {
+	max-height: 100%;
+}
