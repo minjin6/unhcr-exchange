@@ -2,7 +2,15 @@
 	display: inline-block;
 	margin-right: 100px;
 	margin-left: -80px;
+	position: fixed;
+	top: 6%;
+	left: 47%;
+	z-index: 1060;
 }
+
+.modal {
+  left: 55%;
+  }
 
 .modal-body {
 	max-height: 100%;

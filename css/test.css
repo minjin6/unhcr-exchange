@@ -19,7 +19,7 @@ body {
 	font-size: 1.05em;
 	line-height: 1.25em;
 	font-family: helvetica, arial, sans-serif;
-    /*overflow: hidden;*/
+    overflow: hidden;
 	color: #fff;
 }
 
@@ -149,7 +149,10 @@ li {
 }
 
 aside {
-    margin-top: 35%;
+    /*margin-top: 35%;*/
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
 }
 
 aside a:link {
@@ -657,10 +660,24 @@ label.password[for="user_password"] {
 
 /*----------------------------------------// MEDIA QUERY //---------------------------------------------*/
 
-@media (max-width:1280px) { /* 13" Macbook */
+@media (max-width:1400px) { /* 13" Macbook */
 
     .responsive-scale{
         background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/macbook-display.jpg); 
+    }
+
+    aside {
+        /*margin-top: 25%;*/
+        bottom: 18%;
+    }
+
+    section {
+        padding-top: 13%;
+    }
+
+    h2 {
+        font-size: 34px;
+        line-height: 37px;
     }
 }
 
@@ -683,9 +700,9 @@ label.password[for="user_password"] {
 
     }
 
-    aside {
+/*    aside {
         margin-top: 28%;
-    }
+    }*/
 }
 
 @media only screen and (max-width : 980px) { /* ipad2 */
@@ -700,9 +717,9 @@ label.password[for="user_password"] {
         padding-top: 20px;
 	}
 
-    aside {
+/*    aside {
         margin-top: 67%;
-    }
+    }*/
 
 	#menu-icon {
 		display:inline-block;
