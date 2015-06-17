@@ -18,7 +18,7 @@
 body { 
 	font-size: 1.05em;
 	line-height: 1.25em;
-	font-family: helvetica, arial, sans-serif;
+	font-family: 'Oxygen', sans-serif;
     overflow: hidden;
 	color: #fff;
 }
@@ -85,9 +85,10 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 37px;
+    font-family: 'Coming Soon', cursive;
+    font-size: 46px;
     text-transform: uppercase;
-    line-height: 42px;
+    line-height: 52px;
 
 }
 
@@ -149,10 +150,10 @@ li {
 }
 
 aside {
-    /*margin-top: 35%;*/
-    position: absolute;
+      margin-top: 30px;
+/*    position: absolute;
     bottom: 5%;
-    left: 5%;
+    left: 5%;*/
 }
 
 aside a:link {

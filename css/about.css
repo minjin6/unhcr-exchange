@@ -40,11 +40,11 @@ img {
 header {
     background-color: #045288;
     height: 92px;
-    position: fixed;
+/*    position: fixed;
     top: 0;
-    left: 0;
+    left: 0*/;
     width: 100%;
-    z-index: 100;
+    /*z-index: 100;*/
     border-bottom: 5px solid #3181BA;
 
 }
@@ -61,11 +61,10 @@ main, aside {
     padding: 10px 0;
 }
 
-aside, footer {
-    background-color: #045288;
-    }
-
 footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #045288;
     padding: 15px 0;
 
 }
@@ -78,19 +77,60 @@ footer {
     margin-bottom: 20px;
 }
 
+.content-box {
+    /*background-color: pink;*/
+}
+
 main {
     display: inline-block;
-    width: 40%;
+    width: 46%;
     color: black;
+    /*margin-top: 120px;*/
+}
+
+.kicker {
+    color: #045288;
+    font-size: 1.5em;
+    font-weight: lighter;
+    line-height: 1.6em;
+}
+
+ul {
+    display: inline-block;
+    list-style-position: outside;
+    list-style: disc;
+    width: 46%;
+    padding-right: 20px;    
+}
+
+li {
+    margin: 13px;
 }
 
 aside {
     display: inline-block;
-    width: 40%;
+    width: 32%;
+    /*margin-top: 120px;*/
+    margin-left: 10%;
+    color: black;
+}
+
+aside h3 {
+    font-size: 1.7em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+aside h4 {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 15px 0;
 }
 
 p {
     padding: 10px 0;
+    font-size: 1em;
+    line-height: 1.4em;
 }
 
 .responsive_vids iframe {
@@ -103,10 +143,35 @@ p {
 
 .responsive_vids {
     /*display: inline-block;*/
-    border-right: solid 3px black;
+    /*border-right: solid 3px black;*/
     position: relative;
     padding-bottom: 56.25%;
     /*padding-top: 30px;*/
     height: 0;
     overflow: hidden;
+}
+
+footer p {
+    width: 90%
+}
+
+footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+cite {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: lighter;
 }
