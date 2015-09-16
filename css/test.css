@@ -19,7 +19,7 @@ body {
 	font-size: 1.05em;
 	line-height: 1.25em;
 	font-family: 'Oxygen', sans-serif;
-    overflow: hidden;
+    /*overflow: hidden;*/
 	color: #fff;
 }
 
