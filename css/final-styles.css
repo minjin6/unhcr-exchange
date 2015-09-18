@@ -100,7 +100,6 @@ nav {
     left: 0;
     top: 0;
     z-index: -10;
-    width: 70%;
     height: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -154,7 +153,6 @@ nav li a {
     overflow-y: auto;
     position: absolute;
     top: 0;
-    width: 30%;
     z-index: 5;
     /*min-height: 1062px;*/
 }

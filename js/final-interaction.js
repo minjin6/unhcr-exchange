@@ -22,8 +22,8 @@ jQuery(document).ready(function () {
         });
 
         //set margin for the whole container with a jquery UI animation
-        jQuery("#container").animate({"marginLeft": ["70%", 'easeOutExpo']}, {
-            duration: 700
+        jQuery("#container").animate({"marginLeft": ["60%", 'easeOutExpo']}, {
+            duration: 600
         });
 
     });
@@ -36,11 +36,12 @@ jQuery(document).ready(function () {
 
         //set margin for the whole container back to original state with a jquery UI animation
         jQuery("#container").animate({"marginLeft": ["-1", 'easeOutExpo']}, {
-            duration: 700,
+            duration: 600,
             complete: function () {
                 jQuery('#pageOne').css('width', '100%');
                 jQuery('#contentLayer').css('display', 'none');
                 jQuery('nav').css('opacity', 0);
+                jQuery('#pageOne').css('min-height', 'auto');
 
             }
         });
