@@ -38,6 +38,10 @@ body {
     overflow-x: hidden;
 }
 
+#container {
+    width: auto;
+}
+
 #pageOne {
 	background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/desktop.jpg); 
     background-size:cover;
@@ -46,7 +50,7 @@ body {
     position: absolute;
     bottom:0px;
     top:0px;
-    z-index: -1;
+    z-index: 1;
     background-position:center; /* IE fix */
 }
 
@@ -99,7 +103,8 @@ nav {
 	position: fixed;
     left: 0;
     top: 0;
-    z-index: -10;
+    z-index: -3;
+    width: 60%;
     height: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -152,7 +157,9 @@ nav li a {
     overflow-x: hidden;
     overflow-y: auto;
     position: absolute;
+    right: 0;
     top: 0;
+    width: 40%;
     z-index: 5;
     /*min-height: 1062px;*/
 }
@@ -173,7 +180,6 @@ section {
 
 .headline {
 	display: inline-block;
-	width: 50%;
 	margin-top: 30px;
 	font-family: 'Coming Soon', cursive;
     font-size: 2.2em;
@@ -701,3 +707,46 @@ label.password[for="user_password"] {
 
 /*----------------------------------------// MEDIA QUERY //---------------------------------------------*/
 
+@media only screen and (max-width : 1124px) { /* ipad2 */
+
+    #pageOne {
+        background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/ipad-landscape.jpg); 
+    }
+
+    .headline {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 1.7em;
+        line-height: 1.3em;
+    }
+
+}
+
+@media only screen and (max-width : 960px) {
+
+    #pageOne {
+        background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/ipad-portrait.jpg); 
+    }
+
+    .headline {
+        display: inline-block;
+        width: 100%;
+        margin-top: 30px;
+        font-size: 1.7em;
+        line-height: 1.3em;
+        text-align: center;
+    }
+    
+    aside {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: block;
+    }
+
+    .nextPage {
+        width: 180px;
+    }
+
+
+}
