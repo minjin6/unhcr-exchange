@@ -830,6 +830,10 @@ label.password[for="user_password"] {
         line-height: 1.3em;
     }
 
+    .nextPage {
+        width: 180px;
+    }
+
 }
 
 @media only screen and (max-width : 960px) {
@@ -855,7 +859,7 @@ label.password[for="user_password"] {
     }
 
     .nextPage {
-        width: 180px;
+        display: none;
     }
 
 
