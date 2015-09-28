@@ -64,6 +64,28 @@ header {
 	z-index: 7;
 }
 
+.secondary-nav {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    display: inline-block;
+    height: 30px;
+    width: 300px;
+}
+
+.secondary-nav li {
+    display: inline-block;
+    /*position: relative;*/
+    font-size: 1em;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+
+.secondary-nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 #mainLogo {
     position: absolute;
     top: 0px;
@@ -82,7 +104,7 @@ header {
     cursor: pointer;
     position: relative;
     z-index: 5;
-    display: block;
+    display: none;
     width: 25px;
     height: 20px;
     padding: 6px;
@@ -111,14 +133,14 @@ nav {
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: auto;
-    background: #3e3c3d;
-    background: -moz-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e3c3d), color-stop(100%, #2d2c2d));
-    background: -webkit-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
-    background: -o-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
-    background: -ms-linear-gradient(top, #3e3c3d 0%, #2d2c2d 100%);
-    background: linear-gradient(to bottom, #3e3c3d 0%, #2d2c2d 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e3c3d', endColorstr='#2d2c2d', GradientType=0);
+    background: #003154;
+    background: -moz-linear-gradient(top, #003154 0%, #002744 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #003154), color-stop(100%, #002744));
+    background: -webkit-linear-gradient(top, #003154 0%, #002744 100%);
+    background: -o-linear-gradient(top, #003154 0%, #002744 100%);
+    background: -ms-linear-gradient(top, #003154 0%, #002744 100%);
+    background: linear-gradient(to bottom, #003154 0%, #002744 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003154', endColorstr='#002744', GradientType=0);
 }
 
 /*---==== Styling the navidation menu ====---*/
@@ -134,8 +156,8 @@ nav li {
     position: relative;
     font-size: 1em;
     font-weight: bold;
-    border-bottom: 1px solid #222222;
-    border-top: 1px solid #444444;
+    border-bottom: 1px solid #00213a;
+    border-top: 1px solid #002d4e;
     padding: 15px;
 }
 
@@ -287,13 +309,17 @@ footer {
 .imageArea h4 {
     display: inline-block;
     text-align: center;
-    padding: 20px 0;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .imageArea p {
     display: inline-block;
     font-size: 0.85em;
-    line-height: 1.2em;
+    line-height: 1.3em;
+    padding: 10px;
 }
 
 .box {
@@ -301,17 +327,16 @@ footer {
     position: relative;
     background-color: white;
     width: 20%;
-    height: 400px;
+    height: 380px;
 }
 
 .aboutButton {
-    display: inline-block;
+    display: block;
+    margin: 20px auto;
     height: 35px;
     line-height: 35px;
     width: 110px;
-    position: absolute;
-    bottom: 0;
-    background-color: darkblue;
+    background-color: #045288;
     color: white;
 }
 
@@ -323,11 +348,44 @@ footer {
     margin-right: 3%;
 }
 
-.box {
+.onlineImagebox {
+
     display: block;
     height: 150px;
-    border-bottom: solid 3px darkblue;
-    background-color: grey;
+    width: 100%;
+    border-bottom: solid 3px #045288;
+    /*background-image: url(images/Onlinecourses.jpg);*/
+    background-size: cover;
+}
+
+.resourceImagebox {
+
+    display: block;
+    height: 150px;
+    width: 100%;
+    border-bottom: solid 3px #045288;
+    /*background-image: url(images/ressourcelibrary.jpg);*/
+    background-size: cover;
+}
+
+.onlineImagebox {
+
+    display: block;
+    height: 150px;
+    width: 100%;
+    border-bottom: solid 3px #045288;
+    /*background-image: url(images/Onlinecourses.jpg);*/
+    background-size: cover;
+}
+
+.onlineImagebox {
+
+    display: block;
+    height: 150px;
+    width: 100%;
+    border-bottom: solid 3px #045288;
+    /*background-image: url(images/Onlinecourses.jpg);*/
+    background-size: cover;
 }
 
 .footnote {
@@ -818,6 +876,14 @@ label.password[for="user_password"] {
 /*----------------------------------------// MEDIA QUERY //---------------------------------------------*/
 
 @media only screen and (max-width : 1124px) { /* ipad2 */
+
+    .secondary-nav {
+        display: none;
+    }
+
+    #menuIcon {
+        display: block;
+    }
 
     #pageOne {
         background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/ipad-landscape.jpg); 
