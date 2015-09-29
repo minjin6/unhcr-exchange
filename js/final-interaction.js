@@ -34,13 +34,15 @@ jQuery(document).ready(function () {
         //enable all scrolling on mobile devices when menu is closed
         jQuery('#container').unbind('touchmove');
 
+        jQuery('nav').css('opacity', 0);
+        
         //set margin for the whole container back to original state with a jquery UI animation
         jQuery("#container").animate({"marginLeft": ["-1", 'easeOutExpo']}, {
             duration: 600,
             complete: function () {
                 jQuery('#pageOne').css('width', '100%');
                 jQuery('#contentLayer').css('display', 'none');
-                jQuery('nav').css('opacity', 0);
+                
                 jQuery('#pageOne').css('min-height', 'auto');
 
             }
