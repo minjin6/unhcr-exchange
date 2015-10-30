@@ -1,7 +1,7 @@
 /* ---===== Structure helping =====--- */
 
 html {
-    overflow-y: scroll; 
+    overflow-y: scroll;
 }
 
 .clearfix:before, .clearfix:after {
@@ -29,7 +29,7 @@ html {
 
 /* ---===== Customised Layout =====--- */
 
-body { 
+body {
 	font-size: 1.05em;
 	line-height: 1.25em;
 	font-family: 'Oxygen', sans-serif;
@@ -43,7 +43,7 @@ body {
 }
 
 #pageOne {
-	background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/desktop.jpg); 
+	background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/desktop.jpg);
     background-size:cover;
     width: 100%;
     height: 100%;
@@ -210,13 +210,14 @@ section {
 }
 
 aside {
+    position: relative;
     padding: 10px 20px;
 	margin-top: 30px;
 	float: right;
 	display: inline-block;
 	height: 200px;
 	width: 310px;
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.7);
 }
 
 aside p {
@@ -224,7 +225,7 @@ aside p {
 }
 
 aside a:link {
-    color: #000;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -236,9 +237,20 @@ aside a:hover {
 }
 
 aside a:visited {
-    color: #000;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.member-query {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #3181BA;
+    width: 330px;
+    padding: 7px 0;
+    padding-left: 20px;
+    color: white;
 }
 
 footer {
@@ -272,7 +284,7 @@ footer {
     top:0px;
     z-index: 0;
     text-align: center;
-    background-position:center; /* IE fix */ 
+    background-position:center; /* IE fix */
 }
 
 .page-title {
@@ -886,7 +898,7 @@ label.password[for="user_password"] {
     }
 
     #pageOne {
-        background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/ipad-landscape.jpg); 
+        background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/ipad-landscape.jpg);
     }
 
     .headline {
@@ -905,7 +917,7 @@ label.password[for="user_password"] {
 @media only screen and (max-width : 960px) {
 
     #pageOne {
-        background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/ipad-portrait.jpg); 
+        background-image:url(https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/backgrounds/ipad-portrait.jpg);
     }
 
     .headline {
@@ -916,7 +928,7 @@ label.password[for="user_password"] {
         line-height: 1.3em;
         text-align: center;
     }
-    
+
     aside {
         margin-left: auto;
         margin-right: auto;
