@@ -8,35 +8,40 @@
 		<link rel="stylesheet" type="text/css" href="css/responsive-layout.css">
 	</head>
 	<body>
-		<header>
-			<div class="centralise clearfix">
-			<div id="hamburger">
-				<div class="bars"></div>
-				<div class="bars"></div>
-				<div class="bars"></div>
-			</div>
-				<img src="https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/unhcr-exchange-logo-white.png" id="mainLogo" class="floats">
-				<nav class="floats clearfix">
-					<ul>
-						<li><a href="#"></a>Projects</li>
-						<li><a href="#"></a>About</li>
-						<li><a href="#"></a>Learn</li>
-					</ul>
-					<h4>Login</h4>
-				</nav>
-				<div class="b-login-form floats">
-				%{login_form}
-				%{page_content}	
+		<div class="container">
+			<div class="menu_container">
+				<header>
+					<div class="centralise clearfix">
+						<div id="hamburger">
+							<div class="bars"></div>
+							<div class="bars"></div>
+							<div class="bars"></div>
+						</div>
+						<img src="https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/unhcr-exchange-logo-white.png" id="mainLogo" class="floats">
+						<nav class="floats clearfix">
+							<ul>
+								<li><a href="#"></a>Projects</li>
+								<li><a href="#"></a>About</li>
+								<li><a href="#"></a>Learn</li>
+							</ul>
+							<h4>Login</h4>
+						</nav>
+						<div class="b-login-form floats">
+						%{login_form}
+						%{page_content}
+						</div>
+					</div>
+				</header>
+			</div><!-- menu container close -->
+			<section>
+				<div class="centralise">
+					<!-- <img src="https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/icon_universal-language-white.png" class="universal-logo"> -->
+					<!-- Language options needed here-->
 				</div>
-			</div>
-		</header>
-		<section>
-			<div class="centralise">
-				<!-- <img src="https://s3-eu-west-1.amazonaws.com/fuse-public-assets/Public+assets/UNHCR/icon_universal-language-white.png" class="universal-logo"> -->
-				<!-- Language options needed here-->
-			</div>
-		</section>
-		<main></main>
+			</section>
+			<main></main>
+		</div><!-- container close -->
+		<script type="text/javascript" src="js/main.js"></script>
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	</body>
 </html>
